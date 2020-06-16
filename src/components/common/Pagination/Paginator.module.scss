@@ -1,0 +1,27 @@
+@import "../../../assets/scss/variables.module";
+@import "../../../assets/scss/responsive.module";
+
+.site_pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .btnPrev, .btnNext {
+    margin: 0 15px;
+  }
+
+  span {
+    margin: 4px 2px;
+    color: $main_content_color;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+  }
+  span.current_page {
+    font-size: 18px;
+    color: red;
+    cursor: default;
+  }
+}

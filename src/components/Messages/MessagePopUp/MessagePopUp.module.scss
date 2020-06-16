@@ -1,0 +1,94 @@
+@import "../../../assets/scss/style.module";
+@import "../../../assets/scss/variables.module";
+@import "../../../assets/scss/responsive.module";
+
+.messagePopUp {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.8s ease 0s;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 30%;
+    left: (100% - 30%)/2;
+    top: 20%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    height: 50px;
+    background-color: $main_content_color;
+    color: $title_color;
+    border-radius: $radius $radius 0 0;
+
+    i {
+      cursor: pointer;
+      font-size: 20px;
+    }
+  }
+
+  &__content {
+   padding: 30px;
+    background-color: $popUp_bg;
+    border-radius: 0 0 $radius $radius;
+  }
+
+  &__user_data_wrapper {
+    display: flex;
+    margin-bottom: 20px;
+
+    .avatar_wrapper {
+      margin-right: 15px;
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+
+    .user_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .user_name {
+        color: $main_content_color;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .friend_status {
+        color: $popUp_light_color;
+      }
+    }
+  }
+
+  &__send_form {
+    textarea {
+      width: 100%;
+      background-color: $popUp_controls_bg;
+      margin-bottom: 20px;
+    }
+
+    .send_button_wrapper {
+      display: flex;
+      justify-content: flex-end;
+      button {
+        width: 20%;
+        min-width: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../../assets/scss/style.module";
+@import "../../../assets/scss/variables.module";
+@import "../../../assets/scss/responsive.module";
+
+.profile {
+
+  &__name_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__edit_profile {
+    i {
+      color: $main_content_color;
+    }
+  }
+
+  &__username {
+    color: $title_color_2;
+    font-size: 18px;
+    margin: 0px 0px 5px 0px;
+  }
+
+  &__user_data,
+  &__user_data_more {
+    display: flex;
+    margin: 8px 0px 8px 0px;
+  }
+
+  &__user_data_more {
+    flex-direction: column;
+  }
+
+  &__data_more_item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+
+    span {
+      color: $main_content_color;
+    }
+  }
+
+  &__user_data_name {
+    flex: 0 0 35%;
+    color: $second_content_color;
+  }
+
+  &__user_data_value {
+    flex: 0 0 65%;
+    color: $main_content_color;
+  }
+
+  &__more_info_link {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    height: 35px;
+    margin: 16px 0px 16px 0px;
+
+    &:hover {
+      border-radius: $radius;
+      background-color: $main_controls_bg;
+      color: $second_controls_bg;
+    }
+  }
+}

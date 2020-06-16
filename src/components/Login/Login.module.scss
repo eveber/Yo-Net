@@ -1,0 +1,53 @@
+@import "../../assets/scss/style.module";
+@import "../../assets/scss/variables.module";
+@import "../../assets/scss/responsive.module";
+
+.login {
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+  }
+
+  &__form_login {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__checkbox_wrapper {
+    display: flex;
+    align-items: center;
+
+    input {
+      margin: 8px 10px 8px 0px;
+    }
+  }
+
+  &__captcha_wrapper {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin: 10px 0;
+    }
+
+    input {
+      width: 135px;
+    }
+
+    span > i {
+      cursor: pointer;
+      font-size: 24px;
+      position: relative;
+      top: 4px;
+      left: 10px;
+    }
+  }
+
+  &__login_btn {
+    width: 40% !important;
+    margin: 8px 0px 8px 0px;
+  }
+}

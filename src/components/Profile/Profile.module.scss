@@ -1,0 +1,23 @@
+@import "../../assets/scss/style.module";
+@import "../../assets/scss/variables.module";
+@import "../../assets/scss/responsive.module";
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+
+  &__left_block,
+  &__right_block {
+    background-color: $site_bg;
+  }
+
+  &__left_block {
+    flex: 0 0 30%;
+  }
+
+  &__right_block {
+    flex: 0 0 68%;
+    flex-direction: column;
+  }
+}
+

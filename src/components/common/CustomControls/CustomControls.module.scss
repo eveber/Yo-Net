@@ -1,0 +1,40 @@
+@import '../../../assets/scss/variables.module';
+
+.site_textarea {
+  //width: 97%;
+  background-color: $main_controls_bg;
+  border: 1px solid $second_content_color;
+  height: 32px;
+  margin: 8px 0;
+  padding: 8px;
+  resize: none;
+  overflow: hidden;
+  border-radius: $radius;
+
+  &:focus {
+    height:100px;
+  }
+}
+
+.site_input {
+  padding: 8px;
+  background-color: $main_controls_bg;
+  border: 1px solid $second_content_color;
+  border-radius: $radius;
+  margin: 8px 0;
+  width: 250px;
+}
+
+
+.on_custom_control_error {
+  border: 1px solid $error_color;
+}
+
+.custom_control_error_message {
+  display: block;
+  font-style: italic;
+  margin: 5px 0 5px 5px;
+  color: $error_color;
+}
+
+

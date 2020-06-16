@@ -1,0 +1,31 @@
+@import "../../assets/scss/variables.module";
+@import "../../assets/scss/variables.module";
+@import "../../assets/scss/responsive.module";
+
+.sidenav {
+  position: sticky;
+  top: $header_height + 16px;
+
+  &__nav {
+
+    li {
+
+      i {
+        margin-right: 10px;
+        color: $side_nav_icons_color;
+      }
+
+      a {
+        color: $second_controls_bg;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        height: 30px;
+
+        &:hover {
+          background-color: $controls_hover_bg_2;
+        }
+      }
+    }
+  }
+}

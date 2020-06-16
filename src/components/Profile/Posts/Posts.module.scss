@@ -1,0 +1,44 @@
+@import "../../../assets/scss/style.module";
+@import "../../../assets/scss/variables.module";
+@import "../../../assets/scss/responsive.module";
+
+.profile {
+
+  &__data_wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar_middle {
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+  }
+
+  &__post_data_block {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 10px;
+  }
+
+  &__post_user_name,
+  &__post_date {
+    margin: 3px 0px 3px 0px;
+  }
+
+  &__post_user_name {
+    a {
+      color: $main_content_color;
+    }
+  }
+
+  &__post_date {
+    color: $second_content_color;
+  }
+
+  &__post_text {
+    padding: 10px 0;
+  }
+}

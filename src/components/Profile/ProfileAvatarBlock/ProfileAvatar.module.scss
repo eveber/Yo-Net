@@ -1,0 +1,23 @@
+@import "../../../assets/scss/style.module";
+@import "../../../assets/scss/variables.module";
+@import "../../../assets/scss/responsive.module";
+
+
+.profile {
+
+  &__avatar {
+    img {
+      width: 100%;
+      border-radius: $radius;
+    }
+  }
+
+  &__edit_controls {
+    padding: 16px 0px 0px 0px;
+    text-align: center;
+
+    input {
+      width: 115px;
+    }
+  }
+}

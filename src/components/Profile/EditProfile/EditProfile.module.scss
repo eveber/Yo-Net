@@ -1,0 +1,44 @@
+@import "../../../assets/scss/style.module";
+@import "../../../assets/scss/variables.module";
+@import "../../../assets/scss/responsive.module";
+
+
+.editProfile {
+
+  &__form_item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    input {
+      width: 40%;
+    }
+
+    textarea {
+      width: 50%;
+      min-width: 200px;
+    }
+  }
+
+  &__checkBox_wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 15px 0;
+
+    label {
+      margin-left: 5px;
+    }
+
+    input {
+      width: auto;
+    }
+  }
+
+  &__buttons_block {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      width: 20%;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+@import './variables.module';
+
+/*Nulling*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+body {
+  background: $site_bg;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 1120px;
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+.site_block {
+  background-color: $forms_bg;
+  padding: 16px;
+  border-radius: $radius;
+  border: 1px solid $main_controls_bg;
+  box-shadow: 0px 1px 1px $second_content_color;
+  margin: 0px 0px 16px 0px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: $main_content_color;
+  margin: 10px 0 35px 0;
+}
+
+.site_link {
+  color: $main_content_color;
+  cursor: pointer;
+}
+
+.site_button {
+  width: 100%;
+  padding: 8px;
+  border-radius: $radius;
+  background-color: $main_controls_bg;
+  color: $second_controls_bg;
+
+  &:hover {
+    background-color: $controls_hover_bg_2;
+  }
+
+  &:disabled {
+    background-color: $second_content_color;
+    color: lightgray;
+  }
+}
+
+.site_devider {
+  display: block;
+  border-bottom: 1px solid $main_controls_bg;
+  margin: 16px 0;
+}
+
+.site_form_errors_block {
+  border: 1px dashed $error_color;
+  color: $error_color;
+  margin: 10px 0;
+  padding: 10px;
+
+  .error_title {
+    margin-bottom: 10px;
+  }
+}

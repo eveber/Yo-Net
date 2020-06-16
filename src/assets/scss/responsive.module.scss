@@ -1,0 +1,84 @@
+@import "style.module";
+@import "variables.module";
+
+@media (max-width: 767px) {
+  .layout {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__sidenav_block {
+      padding: 0px;
+      width: 100%;
+      margin-bottom: 10px;
+
+      ul {
+        li {
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+
+            i {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    &__page_block {
+      width: 100%;
+    }
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+
+  .users {
+    &__left_block {
+      flex: 0 0 100% !important;
+    }
+
+    &__right_block {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .profile {
+    &__user_data {
+      display: block;
+    }
+  }
+
+  .editProfile {
+
+    &__form_item {
+      input, textarea, label {
+        width: 100% !important;
+      }
+    }
+
+    &__buttons_block {
+
+      button {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .users {
+    &__data_wrapper {
+      flex-direction: column;
+    }
+
+    &__data_block {
+      text-align: center;
+    }
+  }
+}

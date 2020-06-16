@@ -1,0 +1,48 @@
+@import "../../../assets/scss/style.module";
+@import "../../../assets/scss/variables.module";
+@import "../../../assets/scss/responsive.module";
+
+.profile {
+
+  &__write_post_wrapper {
+    display: flex;
+    width: 100%;
+    //align-items: center;
+    justify-content: space-between;
+  }
+
+  &__avatar_small {
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  &__form_add_post {
+    display: flex;
+    width: 100%;
+  }
+
+  &__post_text_area_wrapper {
+    width: 100%;
+
+    textarea {
+      width: 97%;
+      margin: 0 5px;
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+
+  &__post_wrapper {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.post_wrapper_active {
+  border-bottom:1px solid $main_controls_bg;
+  align-items:flex-start;
+}

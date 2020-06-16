@@ -1,0 +1,73 @@
+@import "../../assets/scss/style.module";
+@import "../../assets/scss/variables.module";
+@import "../../assets/scss/responsive.module";
+
+.messages {
+  display: flex;
+  flex-direction: row;
+
+  &__senders_list {
+    flex: 0 0 68%;
+    background-color: $forms_bg;
+    border: 1px solid $border-color;
+    padding: 0;
+  }
+
+  &__right_block {
+    flex: 0 0 30%;
+  }
+
+  &__sender_item {
+    cursor: pointer;
+
+    &:hover {
+      background-color: $controls_hover_bg;
+      outline: 1px solid $controls_hover_bg;
+    }
+
+    .user_wrapper {
+      display: flex;
+      align-items: center;
+
+      .avatar_wrapper {
+        margin: 0 15px 0 10px;
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+      }
+
+      .user_info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70px;
+        justify-content: center;
+        border-bottom: 1px solid $main_controls_bg;
+
+        .name_and_message_data_wrapper {
+          display: flex;
+          justify-content: space-between;
+
+          .user_name {
+            color: $main_content_color;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+
+          .last_message_date {
+            padding-right: 15px;
+            font-size: 12px;
+            color: $second_content_color;
+          }
+        }
+
+        .last_message {
+          color: $second_content_color;
+        }
+      }
+    }
+  }
+}
+

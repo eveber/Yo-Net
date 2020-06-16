@@ -1,0 +1,32 @@
+@import '../src/assets/scss/variables.module';
+@import "../src/assets/scss/style.module";
+@import "../src/assets/scss/responsive.module";
+
+.layout {
+  display: flex;
+  flex-direction: column;
+
+  &__head_block {
+    flex: 0 0 100%;
+    position: sticky;
+    top: 0px;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__sidenav_block,
+  &__page_block {
+    //margin: 16px 0px 0px 0px;
+  }
+
+  &__sidenav_block {
+    flex: 0 0 20%;
+    padding: 0px 16px 0px 0px;
+  }
+
+  &__page_block {
+    flex: 0 0 80%;
+  }
+}
